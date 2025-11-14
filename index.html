@@ -18,6 +18,7 @@
 <body>
   <canvas id="gameCanvas" width="480" height="320"></canvas>
 
+  <!-- 你的遊戲程式碼保留不動 -->
   <script>
     // ======== 遊戲基本設定 ========
     const canvas = document.getElementById("gameCanvas");
@@ -162,5 +163,11 @@
     draw();
   </script>
 
+  <!-- 🔥 Service Worker 註冊（PWA 必須有） -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("./sw.js");
+    }
+  </script>
 </body>
 </html>

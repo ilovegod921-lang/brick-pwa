@@ -2,11 +2,11 @@ self.addEventListener("install", e => {
   e.waitUntil(
     caches.open("v1").then(cache => {
       return cache.addAll([
-        "/",
-        "/index.html",
-        "/manifest.json",
-        "/sw.js",
-        "/icon.png"
+        "/brick-pwa/",
+        "/brick-pwa/index.html",
+        "/brick-pwa/manifest.json",
+        "/brick-pwa/sw.js",
+        "/brick-pwa/icon.png"
       ]);
     })
   );
